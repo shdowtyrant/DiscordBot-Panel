@@ -8,5 +8,5 @@ export const env = {
     DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET || '',
     DISCORD_REDIRECT_URI: process.env.DISCORD_REDIRECT_URI || '',
     JWT_SECRET: process.env.JWT_SECRET || 'your_fallback_jwt_secret',
-    FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:3000',
+    FRONTEND_URL: process.env.FRONTEND_URL || 'https://discord-bot-panel.vercel.app',
 };

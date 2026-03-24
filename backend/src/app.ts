@@ -14,7 +14,7 @@ const app: Application = express();
 // Security & Utility Middlewares
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'https://discord-bot-panel.vercel.app',
   credentials: true,
 }));
 app.use(express.json());
