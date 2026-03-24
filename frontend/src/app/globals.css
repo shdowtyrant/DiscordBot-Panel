@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050505;
+  color: #ededed;
+  -webkit-font-smoothing: antialiased;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(88, 101, 242, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(88, 101, 242, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-white/[0.08] shadow-soft rounded-[2rem];
+  }
+  .subtle-glow {
+    @apply shadow-glow border border-white/[0.08] rounded-[2rem];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60;
+  }
+  .mask-image-gradient {
+    mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  }
+}
